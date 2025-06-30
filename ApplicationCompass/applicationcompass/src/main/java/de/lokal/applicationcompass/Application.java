@@ -14,11 +14,12 @@ public class Application {
     private String notes;
 
     /**
-     * @param companyName the name of the Company 
-     * @param positionTitle the title of the position
-     * @param applicationDate the Date of Application
-     * @param status the status of the application. Finished,running  
-     * @param contactPerson the contact Person of the Company
+     * @param companyName       The name of the company the application was sent to.
+     * @param positionTitle     The title of the position applied for.
+     * @param applicationDate   The date when the application was sent, in YYYY-MM-DD format.
+     * @param status            The current status of the application ("Applied", "Interview", "Rejected", "Offer").
+     * @param contactPerson     The name of the contact person at the company.
+     * @param notes             Any additional notes or comments related to the application.
      */
 
     // Constructor (the blueprint of a Application)
@@ -34,53 +35,53 @@ public class Application {
 
     // --Getter Methods-- 
 
-    public String getcompanyName() {
+    public String getCompanyName() {
         return companyName;
     }
 
-    public String getpositionTitle() {
+    public String getPositionTitle() {
         return positionTitle;
     }
 
-    public String getapplicationDate() {
+    public String getApplicationDate() {
         return applicationDate;
     }
 
-    public String getstatus() {
+    public String getStatus() {
         return status;
     }
 
-    public String getcontactPerson() {
+    public String getContactPerson() {
         return contactPerson;
     }
 
-    public String getnotes() {
+    public String getNotes() {
         return notes;
     }
 
     // --Setter Methods--
 
-    public void setcompanyName(String companyName) {
+    public void setCompanyName(String companyName) {
         this.companyName = companyName;
     }
 
-    public void setpositionTitle (String positionTitle) {
+    public void setPositionTitle (String positionTitle) {
         this.positionTitle = positionTitle;
     }
 
-    public void setapplicationDate (String applicationDate) {
+    public void setApplicationDate (String applicationDate) {
         this.applicationDate = applicationDate;
     }
 
-    public void setstatus (String status) {
+    public void setStatus (String status) {
         this.status = status;
     }
 
-    public void setcontactPerson (String contactPerson) {
+    public void setContactPerson (String contactPerson) {
         this.contactPerson = contactPerson;
     }
 
-    public void setnotes (String notes) {
+    public void setNotes (String notes) {
         this.notes = notes;
     }
 
