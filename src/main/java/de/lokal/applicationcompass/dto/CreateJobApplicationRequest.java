@@ -9,10 +9,12 @@ import java.time.LocalDate;
 
 public record CreateJobApplicationRequest(
 
-        @NotNull
-        Long companyId,
+        @NotBlank
+        @Size(max = 200)
+        String companyName,
 
-        Long locationId,
+        @Size(max = 100)
+        String city,
 
         @NotBlank
         @Size(max = 200)

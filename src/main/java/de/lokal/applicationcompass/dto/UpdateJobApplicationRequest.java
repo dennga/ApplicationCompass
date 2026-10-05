@@ -10,7 +10,12 @@ import java.time.LocalDate;
 
 public record UpdateJobApplicationRequest(
 
-        Long locationId,
+        @NotBlank
+        @Size(max = 200)
+        String companyName,
+
+        @Size(max = 100)
+        String city,
 
         @NotBlank
         @Size(max = 200)
